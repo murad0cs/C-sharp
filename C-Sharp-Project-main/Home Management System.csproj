@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CEA3833-6A62-4D68-8665-A91E178135A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Home_Management_System</RootNamespace>
+    <AssemblyName>Home Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminComplainBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminComplainBox.Designer.cs">
+      <DependentUpon>AdminComplainBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CareTakerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CareTakerHome.Designer.cs">
+      <DependentUpon>CareTakerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CareTakerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CareTakerInfo.Designer.cs">
+      <DependentUpon>CareTakerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplainBox.Designer.cs">
+      <DependentUpon>ComplainBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCareTaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCareTaker.Designer.cs">
+      <DependentUpon>CreateCareTaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeTo-Let.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeTo-Let.Designer.cs">
+      <DependentUpon>MakeTo-Let.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal.Designer.cs">
+      <DependentUpon>Meal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renterbalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renterbalance.Designer.cs">
+      <DependentUpon>Renterbalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenterHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenterHome.Designer.cs">
+      <DependentUpon>RenterHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRenter.Designer.cs">
+      <DependentUpon>CreateRenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renterinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renterinfo.Designer.cs">
+      <DependentUpon>Renterinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToLet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToLet.Designer.cs">
+      <DependentUpon>ToLet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateAdmin.Designer.cs">
+      <DependentUpon>updateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCareTaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCareTaker.Designer.cs">
+      <DependentUpon>UpdateCareTaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRenter.Designer.cs">
+      <DependentUpon>UpdateRenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRenterAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRenterAccount.Designer.cs">
+      <DependentUpon>ViewRenterAccount.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminComplainBox.resx">
+      <DependentUpon>AdminComplainBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CareTakerHome.resx">
+      <DependentUpon>CareTakerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CareTakerInfo.resx">
+      <DependentUpon>CareTakerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplainBox.resx">
+      <DependentUpon>ComplainBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCareTaker.resx">
+      <DependentUpon>CreateCareTaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeTo-Let.resx">
+      <DependentUpon>MakeTo-Let.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal.resx">
+      <DependentUpon>Meal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renterbalance.resx">
+      <DependentUpon>Renterbalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenterHome.resx">
+      <DependentUpon>RenterHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRenter.resx">
+      <DependentUpon>CreateRenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renterinfo.resx">
+      <DependentUpon>Renterinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToLet.resx">
+      <DependentUpon>ToLet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateAdmin.resx">
+      <DependentUpon>updateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCareTaker.resx">
+      <DependentUpon>UpdateCareTaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRenter.resx">
+      <DependentUpon>UpdateRenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRenterAccount.resx">
+      <DependentUpon>ViewRenterAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
